@@ -2,22 +2,23 @@
 ## Aim
 To Implement Transfer Learning for classification using VGG-19 architecture.
 ## Problem Statement and Dataset
-Include the problem statement and Dataset
-</br>
-</br>
-</br>
+Develop an image classification model using transfer learning with the pre-trained VGG19 model. 
 
 ## DESIGN STEPS
 ### STEP 1:
-</br>
+Import required libraries.Then dataset is loaded and define the training and testing dataset.
 
 ### STEP 2:
-</br>
+initialize the model,loss function,optimizer. CrossEntropyLoss for multi-class classification and Adam optimizer for efficient training.
 
 ### STEP 3:
+Train the model with training dataset.
 
-Write your own steps
-<br/>
+### STEP 4:
+Evaluate the model with testing dataset.
+
+### STEP 5:
+Make Predictions on New Data.
 
 ## PROGRAM
 Include your code here
@@ -37,7 +38,6 @@ model.classifier[-1] = nn.Linear(in_features, len(train_dataset.classes))
 # Include the Loss function and optimizer
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters(), lr=0.001)
-
 
 
 # Train the model
@@ -90,35 +90,16 @@ def train_model(model, train_loader,test_loader,num_epochs=10):
 ### Training Loss, Validation Loss Vs Iteration Plot
 ![image](https://github.com/user-attachments/assets/4148312f-b743-44ff-9772-7fd5ca11668b)
 
-
-</br>
-</br>
-</br>
-
 ### Confusion Matrix
 ![Screenshot 2025-03-23 225807](https://github.com/user-attachments/assets/61db2f24-c58b-4bab-a30b-43e730816bf9)
 
-</br>
-</br>
-</br>
-
 ### Classification Report
 ![image](https://github.com/user-attachments/assets/7dda420e-571d-47f0-b860-a8f44b304e68)
-
-</br>
-</br>
-</br>
 
 ### New Sample Prediction
 
 ![image](https://github.com/user-attachments/assets/209889cb-9cbf-4044-85b7-c96d646c7dda)
 
-</br>
-</br>
-</br>
-
 ## RESULT
 Thus, the transfer Learning for classification using VGG-19 architecture has succesfully implemented.
-</br>
-</br>
-</br>
+
