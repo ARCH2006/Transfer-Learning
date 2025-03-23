@@ -21,7 +21,6 @@ Evaluate the model with testing dataset.
 Make Predictions on New Data.
 
 ## PROGRAM
-Include your code here
 ```python
 # Load Pretrained Model and Modify for Transfer Learning
 # Load a pre-trained VGG19 model
